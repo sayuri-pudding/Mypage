@@ -1,0 +1,118 @@
+*{
+    font-family: YuMincho,Yu Mincho,serif;
+}
+/*ヘッダー*/
+.header{
+    position:relative;
+    padding: 0;
+    background-color:#FF80AB;
+}
+.logo{
+    width: 100px;
+    height: 50px;
+    margin: 0 auto;
+    padding-top: 0px;
+    padding-bottom: 0px;
+}
+.nav-toggle{
+    display: none;
+}
+.btn-burger{
+    position: absolute;
+    top: 5px;
+    right: 10px;
+    z-index: 2;
+    display: block;
+    width: 44px;
+    height: 44px;
+    background: url(burger.jpg) center center/25px 25px no-repeat;
+    cursor: pointer;
+}
+.nav-toggle:checked ~ .btn-burger{
+    background: url(batsu.png) center center/25px 25px no-repeat;
+}
+.nav-list{
+    display: none;
+    margin: 0;
+    padding-top: 0px;
+    padding-bottom: 10px;
+    list-style: none;
+}
+.nav-list li{
+    margin:0;
+    padding: 5px;
+    color:white;
+}
+.nav-list a{
+    display: block;
+}
+.nav-toggle:checked ~ .nav .nav-list{
+    display: block;
+}
+/*ワーク*/
+.works-h1{
+    color: #FF80AB;
+    font-size: 30px;
+    text-align: center;
+}
+.works-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.works-button{
+    background-color: #FF80AB;
+    color: white;
+    position: absolute;
+    margin-left: 100px;
+}
+.works-h2{
+    color: #FF80AB;
+}
+.works-h3{
+    color: black;
+}
+.cp_hr06 {
+	position: relative;
+	height: 1px;
+	border-width: 0;
+	background-image: -webkit-linear-gradient(left,
+	transparent 0%,#FF80AB 50%,transparent 100%);
+	background-image:         linear-gradient(90deg,
+	transparent 0%,#FF80AB 50%,transparent 100%);
+}
+/*フッター*/
+footer{
+    position: relative;
+    width: 100%;
+    bottom: 0px;
+    color: white;
+    text-align: center;
+    background-color: #FF80AB;
+}
+.copyright{
+    margin:0;
+}
+.copyright small{
+    font-size:11px;
+}
+
+@media screen and (min-width: 768px) {
+    .works-container{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+    .works-container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-left: 00px;
+    }
+    .works-h2{
+        margin-left: 20px;
+    }
+    .works-h3{
+        margin-left: 20px;
+    }
+}

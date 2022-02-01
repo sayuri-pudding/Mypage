@@ -1,0 +1,126 @@
+
+*{
+    font-family: YuMincho,Yu Mincho,serif;
+}
+/*ヘッダー*/
+.header{
+    position:relative;
+    padding: 0;
+    background-color:#FF80AB;
+}
+.logo{
+    width: 100px;
+    height: 50px;
+    margin: 0 auto;
+    padding-top: 0px;
+    padding-bottom: 0px;
+}
+.nav-toggle{
+    display: none;
+}
+.btn-burger{
+    position: absolute;
+    top: 5px;
+    right: 10px;
+    z-index: 2;
+    display: block;
+    width: 44px;
+    height: 44px;
+    background: url(burger.jpg) center center/25px 25px no-repeat;
+    cursor: pointer;
+}
+.nav-toggle:checked ~ .btn-burger{
+    background: url(batsu.png) center center/25px 25px no-repeat;
+}
+.nav-list{
+    display: none;
+    margin: 0;
+    padding-top: 0px;
+    padding-bottom: 10px;
+    list-style: none;
+}
+.nav-list li{
+    margin:0;
+    padding: 5px;
+    color:white;
+}
+.nav-list a{
+    display: block;
+}
+.nav-toggle:checked ~ .nav .nav-list{
+    display: block;
+}
+/*本文*/
+.top{
+    position: relative;
+    height: 200px;
+    margin-bottom: 0px;
+    background:url(web_main.jpg) center top / cover no-repeat; 
+}
+.home-h1{
+    font-size: 20px;
+    color:white;
+    position: absolute;
+    top: 70px;
+    left:30px;
+}
+.home-h2{
+    margin: 0px;
+    font-size: 15px;
+    color:white;
+    text-align: center;
+    background-color: #FF80AB;    
+}
+.new{
+    width: 80%;
+    font-size: 13px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 30px;
+    text-align: left;
+}
+caption{
+    font-size: 20px;
+    text-align: left;
+}
+/*フッター*/
+footer{
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+    color: white;
+    text-align: center;
+    background-color: #FF80AB;
+}
+.copyright{
+    margin:0;
+}
+.copyright small{
+    font-size:11px;
+}
+
+
+@media screen and (min-width: 768px) {
+    .top{
+        height: 600px;
+    }
+    .home-h1{
+        font-size: 60px;
+        top: 200px;
+        left:100px;
+    }
+    .home-h2{
+        font-size: 25px;
+    }
+    .new{
+        font-size: 20px;
+        margin-left: 100px;
+    }
+    caption{
+        font-size: 25px;
+    }
+    .copyright small{
+        font-size :20px;
+    }
+
+}

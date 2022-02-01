@@ -1,0 +1,76 @@
+*{
+    font-family: YuMincho,Yu Mincho,serif;
+}
+/*ヘッダー*/
+.header{
+    position:relative;
+    padding: 0;
+    background-color:#FF80AB;
+}
+.logo{
+    width: 100px;
+    height: 50px;
+    margin: 0 auto;
+    padding-top: 0px;
+    padding-bottom: 0px;
+}
+.nav-toggle{
+    display: none;
+}
+.btn-burger{
+    position: absolute;
+    top: 5px;
+    right: 10px;
+    z-index: 2;
+    display: block;
+    width: 44px;
+    height: 44px;
+    background: url(burger.jpg) center center/25px 25px no-repeat;
+    cursor: pointer;
+}
+.nav-toggle:checked ~ .btn-burger{
+    background: url(batsu.png) center center/25px 25px no-repeat;
+}
+.nav-list{
+    display: none;
+    margin: 0;
+    padding-top: 0px;
+    padding-bottom: 10px;
+    list-style: none;
+}
+.nav-list li{
+    margin:0;
+    padding: 5px;
+    color:white;
+}
+.nav-list a{
+    display: block;
+}
+.nav-toggle:checked ~ .nav .nav-list{
+    display: block;
+}
+/*Contact*/
+.contact-h1{
+    color: #FF80AB;
+    font-size: 30px;
+    text-align: center;
+}   
+.contact-h2{
+    text-align: center;
+    font-size: 20px;
+}
+/*フッター*/
+footer{
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+    color: white;
+    text-align: center;
+    background-color: #FF80AB;
+}
+.copyright{
+    margin:0;
+}
+.copyright small{
+    font-size:11px;
+}
